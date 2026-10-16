@@ -1,0 +1,13 @@
+﻿Bài 6 : Sự cố tài liệu dự án trên GitHub 
+Phần 1: phân tích
+* khi tải file .docx lên GitHub, trình duyệt không thể xem trước trực tiếp nội dung. Các thành viên khác trong nhóm buộc phải tải file về máy mới đọc được, gây bất tiện lớn trong quy trình làm việc nhóm.
+* Ngược lại, Markdown (.md) được GitHub dựng giao diện tự động ngay trên trình duyệt với đầy đủ tiêu đề, danh sách, khối mã và bảng biểu chuẩn mực
+
+
+* File Word (.docx) là tệp gồm nhiều cấu trúc. Git không thể đọc và phân tích từng dòng ký tự bên trong.
+* Ngược lại, Markdown là tệp văn bản thuần theo từng dòng, giúp Git hiểu chính xác vị trí thay đổi
+
+
+Markdown lại an toàn và nhẹ hơn vì:
+* Markdown chỉ lưu chuỗi ký tự thô kèm vài ký hiệu định dạng (#, **, -), dung lượng chỉ tính bằng vài chục đến vài trăm byte (nhẹ hơn hàng trăm lần). 
+* Vì là chuỗi văn bản nếu mất 1 byte dữ liệu trong quá trình truyền tải, file chỉ mất duy nhất ký tự tại vị trí lỗi đó (hoặc hiển thị một ký tự lạ).nội dung và cấu trúc tài liệu còn lại vẫn hoàn toàn nguyên vẹn
